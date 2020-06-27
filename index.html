@@ -173,19 +173,5 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script>
-        function myCalculatorFunction() {
-          var w = window.outerWidth;
-          if(parseInt(w) > 991) {
-            $("#columnTwo").height($("#columnOne").height());
-          }
-        }
-        window.onload = function() {
-          myCalculatorFunction();
-        };
-        document.getElementsByTagName("BODY")[0].onresize = function() {
-          location.reload();
-        };
-      </script>
   </body>
 </html>
