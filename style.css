@@ -118,6 +118,9 @@
   text-align: center;
   font-weight: bold;
 }
+#contact-me p {
+  text-decoration: none;
+}
 @media screen and (max-width: 767px) {
   .my-card {
     max-width: 60%;
