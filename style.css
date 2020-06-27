@@ -54,6 +54,9 @@
 .my-links {
   display: none;
 }
+.ul-list {
+  display: none;
+}
 .profile {
   background-color: var(--main-bg-color);
   align-items: center;
