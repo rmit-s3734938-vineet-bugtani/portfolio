@@ -33,6 +33,23 @@
         <a href="#experience">Work Experience</a>
         <a href="#contact-me">Contact Me</a>
       </div>
+      <div>
+        <button
+          type="button"
+          onclick="displayHamburgerMenu()"
+          class="hamburger"
+        >
+          <i class="fa fa-bars"> </i>
+        </button>
+      </div>
+      <div class="my-links">
+        <ul class="ul-list">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#my-projects">Projects</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+      </div>
     </div>
     <div class="profile" id="profile">
       <h3>
@@ -173,5 +190,15 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script>
+    function displayHamburgerMenu() {
+        var x = document.getElementsByClassName("ul-list")[0];
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

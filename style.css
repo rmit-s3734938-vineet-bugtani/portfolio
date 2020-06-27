@@ -28,6 +28,32 @@
   text-decoration: none;
   color: var(--main-bg-color);
 }
+.my-links a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid;
+  border-color: var(--main-bg-color);
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
+.hamburger {
+  font-size: 20px;
+  padding: 12px;
+  background-color: white;
+  border: 0px;
+  color: var(--main-bg-color);
+  display: none;
+  outline: none;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger:focus,.hamburger:active {
+  outline: none !important;
+  box-shadow: none;
+}
+.my-links {
+  display: none;
+}
 .profile {
   background-color: var(--main-bg-color);
   align-items: center;
@@ -145,7 +171,35 @@
   .links {
     display: none;
   }
+  .nav h3 {
+    text-align: left;
+    margin-left: 5px;
+  }
+  .hamburger {
+    display: block;
+    outline: none;
+  }
+  .my-links {
+    width: 100%;
+    display: flex;
+  }
+  .ul-list {
+    list-style-type: none;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .ul-list li a {
+    text-decoration: none;
+    outline: none;
+  }
+  .ul-list li {
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
 }
-
-
+/* @media screen and (max-width: 500px) {
+  .my-links,.ul-list {
+    display: none;
+  }
+} */
 
