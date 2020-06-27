@@ -1,121 +1,129 @@
 :root {
-    --main-bg-color: #E99C76; 
-    --secondary-color: #FFFFFF;
-  }
-  .nav {
-    height: 10vh;
-    align-items: center;
-    display: flex;
-  }
-  .nav h3 {
-    margin-left: 25px;
-    flex: 1;
-    color: var(--main-bg-color);
-  }
-  .nav a {
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: large;
-    padding-bottom: 5px;
-    color: var(--main-bg-color);
-  }
-  .links a:hover {
-    cursor: pointer;
-    border-bottom: 2px solid;
-    border-color: var(--main-bg-color);
-    text-decoration: none;
-    color: var(--main-bg-color);
-  }
-  .profile {
-    height: 60vh;
-    background-color: var(--main-bg-color);
-    align-items: center;
-    display: flex;
-  }
-  .profile h3 {
-    color: var(--secondary-color);
-    font-weight: bold;
-    width: 80vw;
-    margin: auto;
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-  }
-  .title {
-    color: var(--main-bg-color);
-    text-align: center;
-    margin-bottom: 5px;
-    font-weight: bold;
-    padding-top: 10px;
-  }
-  .title-bottom {
-    background-color: var(--main-bg-color);
-    height: 5px;
-    width: 200px;
-    margin: auto;
-    margin-bottom: 30px;
-  }
+  --main-bg-color: #e99c76;
+  --secondary-color: #ffffff;
+}
+.nav {
+  height: 10vh;
+  align-items: center;
+  display: flex;
+}
+.nav h3 {
+  margin-left: 25px;
+  flex: 1;
+  color: var(--main-bg-color);
+}
+.nav a {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 5px;
+  color: var(--main-bg-color);
+}
+.links a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid;
+  border-color: var(--main-bg-color);
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
+.profile {
+  height: 60vh;
+  background-color: var(--main-bg-color);
+  align-items: center;
+  display: flex;
+}
+.profile h3 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  width: 80vw;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+.title {
+  color: var(--main-bg-color);
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.title-bottom {
+  background-color: var(--main-bg-color);
+  height: 5px;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.my-card {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid yellow;
+}
+.card-body {
+  text-align: center;
+  color: var(--main-bg-color);
+}
+.btntext {
+  color: var(--secondary-color);
+}
+.card-img-top {
+  border-bottom: 5px solid var(--main-bg-color);
+}
+.btn {
+  background-color: var(--main-bg-color);
+}
+.card-body a.btn:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid;
+  border-color: var(--main-bg-color);
+}
+.card-body a.btn:hover .btntext {
+  color: var(--main-bg-color);
+}
+#experience {
+  background-color: var(--main-bg-color);
+  text-align: center;
+  color: var(--secondary-color);
+}
+.work-exp-title {
+  color: var(--secondary-color);
+}
+.work-exp-title-bottom {
+  background-color: var(--secondary-color);
+}
+.work-tab {
+  border: 5px solid;
+  border-color: var(--secondary-color);
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.resp-list {
+  text-align: left;
+}
+#contact-me {
+  height: 30vh;
+  color: var(--main-bg-color);
+  text-align: center;
+  font-weight: bold;
+}
+.contact {
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
   .my-card {
-    max-width: 80%;
+    max-width: 60%;
     margin: auto;
     margin-bottom: 30px;
-    border: 1px solid yellow;
   }
-  .card-body {
+}
+@media screen and (max-width: 650px) {
+  .nav {
     text-align: center;
-    color: var(--main-bg-color);
   }
-  .btntext {
-    color: var(--secondary-color);
+  .links {
+      width:100%;
   }
-  .card-img-top {
-    border-bottom: 5px solid var(--main-bg-color);
-  }
-  .btn {
-    background-color: var(--main-bg-color);
-  }
-  .card-body a.btn:hover {
-    background-color: var(--secondary-color);
-    border: 1px solid;
-    border-color: var(--main-bg-color);
-  }
-  .card-body a.btn:hover .btntext {
-    color: var(--main-bg-color);
-  }
-  #experience {
-    background-color: var(--main-bg-color);
-    text-align: center;
-    color: var(--secondary-color);
-  }
-  .work-exp-title {
-    color: var(--secondary-color);
-  }
-  .work-exp-title-bottom {
-    background-color: var(--secondary-color);
-  }
-  .work-tab {
-    border: 5px solid;
-    border-color: var(--secondary-color);
-    width: 80%;
-    margin: auto;
-    margin-bottom:20px;
-  }
-  .resp-list {
-    text-align: left;
-  }
-  #contact-me {
-    height: 30vh;
-    color: var(--main-bg-color);
-    text-align: center;
-    font-weight: bold;
-  }
-  .contact {
-    text-align: center;
-    font-weight: bold;
-  }
-  @media screen and (max-width: 767px) {
-    .my-card {
-      max-width: 60%;
-      margin: auto;
-      margin-bottom: 30px;
-    }
-  }
+}
