@@ -185,11 +185,10 @@
   .my-links {
     width: 100%;
     display: flex;
+    justify-content: center;
   }
   .ul-list {
     list-style-type: none;
-    text-align: left;
-    justify-content: flex-start;
   }
   .ul-list li a {
     text-decoration: none;
