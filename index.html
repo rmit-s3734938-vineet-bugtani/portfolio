@@ -23,6 +23,7 @@
       href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="nav">
@@ -64,7 +65,7 @@
       <div class="title-bottom"></div>
       <div class="row">
         <div class="col-lg-4 col-md-6">
-          <div class="card my-card">
+          <div class="card my-card" data-aos="fade-right">
             <img
               class="card-img-top"
               src="images/bank.jpg"
@@ -81,7 +82,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6 ">
-          <div class="card my-card">
+          <div class="card my-card" data-aos="fade-left">
             <img
               class="card-img-top"
               src="images/angular.jpg"
@@ -97,8 +98,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 ">
-          <div class="card my-card">
+        <div class="col-lg-4 col-md-6">
+          <div class="card my-card" data-aos="fade-right">
             <img
               class="card-img-top"
               src="images/jemena.png"
@@ -115,7 +116,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6 ">
-          <div class="card my-card">
+          <div class="card my-card" data-aos="fade-left">
             <img
               class="card-img-top"
               src="images/rpc.jpg"
@@ -138,7 +139,7 @@
       <div class="title-bottom work-exp-title-bottom"></div>
       <div class="row work-row">
         <div class="col-lg-6 col-md-12 col-sm-12 col">
-          <div class="work-tab" id="columnOne">
+          <div class="work-tab" id="columnOne"  data-aos="fade-right">
             <h4 class="companyname">Software developer, Jemena</h4>
             <h5 class="details">Melbourne | March 2020 - June 2020</h5>
             <h5 class="responsibilities"><u>Key Responsibilities</u></h5>
@@ -167,7 +168,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12">
-          <div class="work-tab" id="columnTwo">
+          <div class="work-tab" id="columnTwo" data-aos="fade-left">
             <h4 class="companyname">Software developer, Accenture</h4>
             <h5 class="details">Mumbai | Nov 2016 - June 2018</h5>
             <h5 class="responsibilities"><u>Key Responsibilities</u></h5>
@@ -184,7 +185,7 @@
         </div>
       </div>
     </div>
-    <div id="contact-me">
+    <div id="contact-me" data-aos="fade-bottom">
       <div class="title"><h2>Contact Me</h2></div>
       <div class="title-bottom"></div>
       <p><h5><i class="fas fa-mobile-alt"></i> : +61414092713</h5></p>
@@ -216,6 +217,10 @@
           x.style.display = "block";
         }
       }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
