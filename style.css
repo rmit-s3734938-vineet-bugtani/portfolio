@@ -3,6 +3,12 @@
 
   --secondary-color: #ffffff;
 }
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 .nav {
   align-items: center;
   display: flex;
