@@ -3,6 +3,10 @@
 
   --secondary-color: #ffffff;
 }
+.navandprofile {
+  background-color: var(--main-bg-color);
+  color: var(--secondary-color);
+}
 .nav {
   align-items: center;
   display: flex;
@@ -12,35 +16,35 @@
 .nav h3 {
   margin-left: 25px;
   flex: 1;
-  color: var(--main-bg-color);
+  font-weight: bold;
 }
 .nav a {
   margin-right: 20px;
   font-weight: bold;
   font-size: large;
   padding-bottom: 5px;
-  color: var(--main-bg-color);
+  color: var(--secondary-color);
 }
 .links a:hover {
   cursor: pointer;
   border-bottom: 2px solid;
-  border-color: var(--main-bg-color);
+  border-color: var(--secondary-color);
   text-decoration: none;
-  color: var(--main-bg-color);
+  color: var(--secondary-color);
 }
 .my-links a:hover {
   cursor: pointer;
   border-bottom: 2px solid;
-  border-color: var(--main-bg-color);
+  border-color: var(--secondary-color);
   text-decoration: none;
-  color: var(--main-bg-color);
+  color: var(--secondary-color);
 }
 .hamburger {
   font-size: 20px;
-  padding: 12px;
-  background-color: white;
+  /* padding: 12px; */
+  background-color: inherit;
   border: 0px;
-  color: var(--main-bg-color);
+  color: var(--secondary-color);
   display: none;
   outline: none;
 }
@@ -58,19 +62,18 @@
   display: none;
 }
 .profile {
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(153,0,0,1) 0%, rgba(238,212,212,1) 100%);
   align-items: center;
   display: flex;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 100px;
 }
-.profile h3 {
+.profile p {
   color: var(--secondary-color);
   font-weight: bold;
-  width: 60vw;
+  width: 80vw;
   margin: auto;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
+  font-size: 1.8rem;
 }
 .title {
   color: var(--main-bg-color);
@@ -114,9 +117,10 @@
   color: var(--main-bg-color);
 }
 #experience {
-  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(153,0,0,1) 0%, rgba(238,212,212,1) 100%);
+  background-color: var(--main-bg-color);
   text-align: center;
   color: var(--secondary-color);
+  margin-top: -10px;
 }
 .work-exp-title {
   color: var(--secondary-color);
@@ -181,6 +185,14 @@
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 700px) {
+  .profile p {
+    font-size: 1.8rem;
+  }
+  .profile {
+    padding: 100px 0 50px 0;
+  }
+}
 @media screen and (max-width: 650px) {
   .nav {
     text-align: center;
@@ -188,17 +200,16 @@
   .links {
       width:100%;
   }
-  .profile h3 {
-    width: 80vw;
-  }
 }
 @media screen and (max-width: 500px) {
   .nav {
     padding-bottom: 0px;
   }
   .profile {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 70px 0 50px 0;
+  }
+  .profile p {
+    font-size: 1.5rem;
   }
   .links {
     display: none;
