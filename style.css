@@ -41,7 +41,6 @@
 }
 .hamburger {
   font-size: 20px;
-  /* padding: 12px; */
   background-color: inherit;
   border: 0px;
   color: var(--secondary-color);
@@ -64,7 +63,8 @@
 .profile {
   align-items: center;
   display: flex;
-  padding-top: 100px;
+  padding-top: 10vw;
+  padding-bottom: 5vw;
 }
 .profile p {
   color: var(--secondary-color);
@@ -187,10 +187,7 @@
 }
 @media screen and (max-width: 700px) {
   .profile p {
-    font-size: 1.8rem;
-  }
-  .profile {
-    padding: 100px 0 50px 0;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -205,18 +202,12 @@
   .nav {
     padding-bottom: 0px;
   }
-  .profile {
-    padding: 70px 0 50px 0;
-  }
-  .profile p {
-    font-size: 1.5rem;
-  }
   .links {
     display: none;
   }
   .nav h3 {
     text-align: left;
-    margin-left: 5px;
+    margin-left: 5vw;
   }
   .hamburger {
     display: block;
