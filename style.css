@@ -63,8 +63,8 @@
 .profile {
   align-items: center;
   display: flex;
-  padding-top: 10vw;
-  padding-bottom: 5vw;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
 }
 .profile p {
   color: var(--secondary-color);
