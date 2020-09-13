@@ -2,285 +2,263 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link href="style.css" type="text/css" rel="stylesheet" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="keywords"
-    content="Vineet, Bugtani, RMIT, Portfolio, Software, Developer, Profile, Personal, Website, Github, Graduate, Masters, IT, Information, Technology, Application, App, Engineer">
-  <meta name="description"
-    content="Vineet Bugtani's personal portfolio. Graduate software developer actively seeking a job in the software industry.">
-  <meta name="author" content="Vineet Bugtani">
-  <meta name="google-site-verification" content="YHzQSrlf8B4xrNccsH6r0Qx3iP5SJ4H6AdwIYIKwpUw" />
-  <title>Vineet Bugtani</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    html,
-    body {
-      overflow-x: hidden;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="Vineet, Bugtani, RMIT, Portfolio, Software, Developer, Profile, Personal, Website, Github, Graduate, Masters, IT, Information, Technology, Application, App, Engineer">
+    <meta name="description" content="Vineet Bugtani's personal portfolio. Graduate software developer actively seeking a job in the software industry.">
+    <meta name="author" content="Vineet Bugtani">
+    <meta name="google-site-verification" content="YHzQSrlf8B4xrNccsH6r0Qx3iP5SJ4H6AdwIYIKwpUw" />
+    <title>Vineet Bugtani</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        html,
+        body {
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="navandprofile">
-    <div class="nav">
-      <h3>Vineet Bugtani</h3>
-      <div class="links">
-        <a href="#profile">Profile</a>
-        <a href="#my-projects">Projects</a>
-        <a href="#experience">Work Experience</a>
-        <a href="#contact-me">Contact Me</a>
-      </div>
-      <div>
-        <button type="button" onclick="displayHamburgerMenu()" class="hamburger">
+    <div class="navandprofile">
+        <div class="nav-wrapper">
+            <div class="nav" id="nav">
+                <h3>Vineet Bugtani</h3>
+                <div class="links">
+                    <a href="#profile">Profile</a>
+                    <a href="#my-projects">Projects</a>
+                    <a href="#experience">Work Experience</a>
+                    <a href="#contact-me">Contact Me</a>
+                </div>
+                <div>
+                    <button onclick="displayHamburgerMenu()" type="button" class="hamburger" id="hamburger">
           <i class="fa fa-bars"> </i>
         </button>
-      </div>
-      <div class="my-links">
-        <ul class="ul-list">
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#my-projects">Projects</a></li>
-          <li><a href="#experience">Work Experience</a></li>
-          <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
-      </div>
+                </div>
+                <div class="my-links" id="my-links">
+                    <ul class="ul-list">
+                        <li><a href="#profile" onclick="displayHamburgerMenu()">Profile</a></li>
+                        <li><a href="#my-projects" onclick="displayHamburgerMenu()">Projects</a></li>
+                        <li><a href="#experience" onclick="displayHamburgerMenu()">Work Experience</a></li>
+                        <li><a href="#contact-me" onclick="displayHamburgerMenu()">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="profile" id="profile">
+            <p data-aos="fade-right">
+                Diligent and collaborative individual with solid programming skills desiring the position of a software developer. Bringing expertise in writing full-stack code with a strong understanding of object-oriented design and coding best practices.
+            </p>
+        </div>
     </div>
-    <div class="profile" id="profile">
-      <p data-aos="fade-right">
-        Diligent and collaborative individual with solid programming skills
-        desiring the position of a software developer. Bringing expertise
-        in writing full-stack code with a strong understanding of
-        object-oriented design and coding best practices.
-      </p>
-    </div>
-  </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#990000" fill-opacity="1"
       d="M0,288L30,245.3C60,203,120,117,180,112C240,107,300,181,360,181.3C420,181,480,107,540,80C600,53,660,75,720,122.7C780,171,840,245,900,277.3C960,309,1020,299,1080,288C1140,277,1200,267,1260,234.7C1320,203,1380,149,1410,122.7L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
     </path>
   </svg>
-  <div class="container my-projects" id="my-projects">
-    <div class="title">
-      <h2>My Projects</h2>
-    </div>
-    <div class="title-bottom"></div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="card my-card" data-aos="fade-right">
-          <img class="card-img-top" src="images/bank.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Client Banking Website</h5>
-            <h6 class="card-title">.Net Core 3.0</h6>
-            <a class="btn text-center" href="https://github.com/rmit-wdt2020/customer-banking-application"><span
-                class="btntext">View Now</span></a>
-          </div>
+    <div class="container my-projects" id="my-projects">
+        <div class="title">
+            <h2>My Projects</h2>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 ">
-        <div class="card my-card" data-aos="fade-left">
-          <img class="card-img-top" src="images/angular.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Admin Banking Website</h5>
-            <h6 class="card-title">.Net Core 3.0, Angular 8</h6>
-            <a class="btn text-center" href="https://github.com/rmit-wdt2020/admin-banking-application"><span
+        <div class="title-bottom"></div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card my-card" data-aos="fade-right">
+                    <img class="card-img-top" src="images/bank.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title">Client Banking Website</h5>
+                        <h6 class="card-title">.Net Core 3.0</h6>
+                        <a class="btn text-center" href="https://github.com/rmit-wdt2020/customer-banking-application"><span
                 class="btntext">View Now</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card my-card" data-aos="fade-right">
-          <img class="card-img-top" src="images/jemena.png" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Jemena Gas App</h5>
-            <h6 class="card-title">.Net Core 3.0, React Native</h6>
-            <a class="btn text-center"
-              href="https://github.com/rmit-s3734938-vineet-bugtani/react-native-jemena-gasmeters"><span
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="card my-card" data-aos="fade-left">
+                    <img class="card-img-top" src="images/angular.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title">Admin Banking Website</h5>
+                        <h6 class="card-title">.Net Core 3.0, Angular 8</h6>
+                        <a class="btn text-center" href="https://github.com/rmit-wdt2020/admin-banking-application"><span
                 class="btntext">View Now</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 ">
-        <div class="card my-card" data-aos="fade-left">
-          <img class="card-img-top" src="images/rpc.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Rock Paper Scissors</h5>
-            <h6 class="card-title">HTML, CSS, JS</h6>
-            <a class="btn text-center"
-              href="https://github.com/rmit-s3734938-vineet-bugtani/rock-paper-scissors-game-website"><span
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card my-card" data-aos="fade-right">
+                    <img class="card-img-top" src="images/jemena.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title">Jemena Gas App</h5>
+                        <h6 class="card-title">.Net Core 3.0, React Native</h6>
+                        <a class="btn text-center" href="https://github.com/rmit-s3734938-vineet-bugtani/react-native-jemena-gasmeters"><span
                 class="btntext">View Now</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 ">
-        <div class="card my-card" data-aos="fade-right">
-          <img class="card-img-top" src="images/aws.png" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Cloud Computing Project</h5>
-            <h6 class="card-title">AWS Services</h6>
-            <a class="btn text-center" href="https://github.com/rmit-s3740446-Ryan-Cassidy/CC-Assignment"><span
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="card my-card" data-aos="fade-left">
+                    <img class="card-img-top" src="images/rpc.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title">Rock Paper Scissors</h5>
+                        <h6 class="card-title">HTML, CSS, JS</h6>
+                        <a class="btn text-center" href="https://github.com/rmit-s3734938-vineet-bugtani/rock-paper-scissors-game-website"><span
                 class="btntext">View Now</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 ">
-        <div class="card my-card" data-aos="fade-left">
-          <img class="card-img-top" src="images/resort.jpg" alt="Card image cap" />
-          <div class="card-body">
-            <h5 class="card-title">Resort App(In Progress)</h5>
-            <h6 class="card-title">ReactJS</h6>
-            <a class="btn text-center"
-              href="https://github.com/rmit-s3734938-vineet-bugtani/reactjs-resortbooking"><span class="btntext">View
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="card my-card" data-aos="fade-right">
+                    <img class="card-img-top" src="images/aws.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Computing Project</h5>
+                        <h6 class="card-title">AWS Services</h6>
+                        <a class="btn text-center" href="https://github.com/rmit-s3740446-Ryan-Cassidy/CC-Assignment"><span
+                class="btntext">View Now</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="card my-card" data-aos="fade-left">
+                    <img class="card-img-top" src="images/resort.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title">Resort App(In Progress)</h5>
+                        <h6 class="card-title">ReactJS</h6>
+                        <a class="btn text-center" href="https://github.com/rmit-s3734938-vineet-bugtani/reactjs-resortbooking"><span class="btntext">View
                 Now</span></a>
-          </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#990000" fill-opacity="1"
       d="M0,288L30,245.3C60,203,120,117,180,112C240,107,300,181,360,181.3C420,181,480,107,540,80C600,53,660,75,720,122.7C780,171,840,245,900,277.3C960,309,1020,299,1080,288C1140,277,1200,267,1260,234.7C1320,203,1380,149,1410,122.7L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
     </path>
   </svg>
-  <div id="experience">
-    <div class="title work-exp-title">
-      <h2>Work Experience</h2>
-    </div>
-    <div class="title-bottom work-exp-title-bottom"></div>
-    <div class="row work-row">
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <div class="work-tab" id="columnOne" data-aos="fade-left">
-          <h4 class="companyname">Web Developer, Newgen Apparel</h4>
-          <h5 class="details">One day/week | Melbourne | July 2020 - Ongoing</h5>
-          <h5 class="responsibilities"><u>Key Responsibilities</u></h5>
-          <ul class="resp-list">
-            <li>
-              Fixing bugs and issues reported to product owner by users .
-            </li>
-            <li>
-              Website maintenance and optimization.
-            </li>
-          </ul>
+    <div id="experience">
+        <div class="title work-exp-title">
+            <h2>Work Experience</h2>
         </div>
-        <div class="work-tab" id="columnOne" data-aos="fade-right">
-          <h4 class="companyname">Software Developer, Jemena</h4>
-          <h5 class="details">Part time| Melbourne | March 2020 - June 2020</h5>
-          <h5 class="responsibilities"><u>Key Responsibilities</u></h5>
-          <ul class="resp-list">
-            <li>
-              Coded the entire front-end of the application in React Native–
-              integrated a new feature into the application with each sprint.
-              Made RESTful APIs in ASP.NET Core with another developer.
-            </li>
-            <li>
-              Effectively translated business requirements into a technical
-              design and transformed that design into a working application.
-            </li>
-            <li>
-              Managed a team of five students including myself by conducting
-              regular online meetings, delegating work to each team member
-              depending on their current skill set.
-            </li>
-            <li>
-              Administered Agile processes such as sprint planning, daily
-              scrums; assisted all team members in their work as and when
-              required.
-            </li>
-          </ul>
+        <div class="title-bottom work-exp-title-bottom"></div>
+        <div class="row work-row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="work-tab" id="columnOne" data-aos="fade-left">
+                    <h4 class="companyname">Web Developer, Newgen Apparel</h4>
+                    <h5 class="details">One day/week | Melbourne | July 2020 - Ongoing</h5>
+                    <h5 class="responsibilities"><u>Key Responsibilities</u></h5>
+                    <ul class="resp-list">
+                        <li>
+                            Fixing bugs and issues reported to product owner by users .
+                        </li>
+                        <li>
+                            Website maintenance and optimization.
+                        </li>
+                    </ul>
+                </div>
+                <div class="work-tab" id="columnOne" data-aos="fade-right">
+                    <h4 class="companyname">Software Developer, Jemena</h4>
+                    <h5 class="details">Part time| Melbourne | March 2020 - June 2020</h5>
+                    <h5 class="responsibilities"><u>Key Responsibilities</u></h5>
+                    <ul class="resp-list">
+                        <li>
+                            Coded the entire front-end of the application in React Native– integrated a new feature into the application with each sprint. Made RESTful APIs in ASP.NET Core with another developer.
+                        </li>
+                        <li>
+                            Effectively translated business requirements into a technical design and transformed that design into a working application.
+                        </li>
+                        <li>
+                            Managed a team of five students including myself by conducting regular online meetings, delegating work to each team member depending on their current skill set.
+                        </li>
+                        <li>
+                            Administered Agile processes such as sprint planning, daily scrums; assisted all team members in their work as and when required.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="work-tab" id="columnTwo" data-aos="fade-left">
+                    <h4 class="companyname">Web Developer, Accenture</h4>
+                    <h5 class="details">Full time | Mumbai | Nov 2016 - June 2018</h5>
+                    <h5 class="responsibilities"><u>Key Responsibilities</u></h5>
+                    <ul class="resp-list">
+                        <li>Developed UI and business logic of new features to be integrated in the website in .NET.</li>
+                        <li>Developed SQL stored procedures.</li>
+                        <li>
+                            Automated SQL scripting tasks that used to take 2 weeks/module to complete when typed manually. With the software written in object-oriented Excel VBA, the time taken to generate the scripts was cut down by 60% per module.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <div class="work-tab" id="columnTwo" data-aos="fade-left">
-          <h4 class="companyname">Web Developer, Accenture</h4>
-          <h5 class="details">Full time | Mumbai | Nov 2016 - June 2018</h5>
-          <h5 class="responsibilities"><u>Key Responsibilities</u></h5>
-          <ul class="resp-list">
-            <li>Developed UI and business logic of new features to be integrated in the website in .NET.</li>
-            <li>Developed SQL stored procedures.</li>
-            <li>
-              Automated SQL scripting tasks that used to take 2 weeks/module
-              to complete when typed manually. With the software written in
-              object-oriented Excel VBA, the time taken to generate the
-              scripts was cut down by 60% per module.
-            </li>
-          </ul>
+    </div>
+    </div>
+    <div id="contact-me" data-aos="fade-bottom">
+        <div class="title">
+            <h2>Contact Me</h2>
         </div>
-      </div>
+        <div class="title-bottom"></div>
+        <div class="contact-details">
+            <p>
+                <h5><i class="fas fa-mobile-alt"></i> : +61414092713</h5>
+            </p>
+            <p>
+                <h5><i class="fas fa-envelope-square"></i> : vinit.bugtani@gmail.com</h5>
+            </p>
+        </div>
     </div>
-  </div>
-  </div>
-  <div id="contact-me" data-aos="fade-bottom">
-    <div class="title">
-      <h2>Contact Me</h2>
-    </div>
-    <div class="title-bottom"></div>
-    <div class="contact-details">
-      <p>
-        <h5><i class="fas fa-mobile-alt"></i> : +61414092713</h5>
-      </p>
-      <p>
-        <h5><i class="fas fa-envelope-square"></i> : vinit.bugtani@gmail.com</h5>
-      </p>
-    </div>
-  </div>
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script>
-    function displayHamburgerMenu() {
-      var x = document.getElementsByClassName("ul-list")[0];
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        function displayHamburgerMenu() {
+            var x = document.getElementsByClassName("ul-list")[0];
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
 
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction();
+        };
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "flex";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
