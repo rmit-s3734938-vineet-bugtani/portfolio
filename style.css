@@ -1,307 +1,235 @@
 :root {
-    --main-bg-color: #990000;
-    --secondary-color: #ffffff;
-}
+  --main-bg-color: #990000;
 
+  --secondary-color: #ffffff;
+}
 .navandprofile {
-    background-color: var(--main-bg-color);
-    color: var(--secondary-color);
+  background-color: var(--main-bg-color);
+  color: var(--secondary-color);
 }
-
-.nav-wrapper {
-    height: 100%;
-}
-
 .nav {
-    align-items: center;
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    clear: both;
-    width: 100%;
-    background-color: var(--main-bg-color);
+  align-items: center;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 .nav h3 {
-    margin-left: 25px;
-    flex: 1;
-    font-weight: bold;
+  margin-left: 25px;
+  flex: 1;
+  font-weight: bold;
 }
-
 .nav a {
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: large;
-    padding-bottom: 5px;
-    color: var(--secondary-color);
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 5px;
+  color: var(--secondary-color);
 }
-
 .links a:hover {
-    cursor: pointer;
-    border-bottom: 2px solid;
-    border-color: var(--secondary-color);
-    text-decoration: none;
-    color: var(--secondary-color);
+  cursor: pointer;
+  border-bottom: 2px solid;
+  border-color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
 }
-
 .my-links a:hover {
-    cursor: pointer;
-    border-bottom: 2px solid;
-    border-color: var(--secondary-color);
-    text-decoration: none;
-    color: var(--secondary-color);
+  cursor: pointer;
+  border-bottom: 2px solid;
+  border-color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
 }
-
 .hamburger {
-    font-size: 20px;
-    background-color: inherit;
-    border: 0px;
-    color: var(--secondary-color);
-    display: none;
-    outline: none;
-    margin-top: -10px;
+  font-size: 20px;
+  background-color: inherit;
+  border: 0px;
+  color: var(--secondary-color);
+  display: none;
+  outline: none;
 }
-
 .hamburger:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
-.hamburger:focus,
-.hamburger:active {
-    outline: none !important;
-    box-shadow: none;
+.hamburger:focus,.hamburger:active {
+  outline: none !important;
+  box-shadow: none;
 }
-
 .my-links {
-    display: none;
+  display: none;
 }
-
 .ul-list {
-    display: none;
+  display: none;
 }
-
 .profile {
-    align-items: center;
-    display: flex;
-    padding-top: 10vw;
-    padding-bottom: 5vw;
-    margin-top: 0px;
+  align-items: center;
+  display: flex;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
 }
-
 .profile p {
-    color: var(--secondary-color);
-    font-weight: bold;
-    width: 80vw;
-    margin: auto;
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-    font-size: 1.8rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  width: 80vw;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 1.8rem;
 }
-
 .title {
-    color: var(--main-bg-color);
-    text-align: center;
-    margin-bottom: 5px;
-    font-weight: bold;
-    padding-top: 10px;
+  color: var(--main-bg-color);
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding-top: 10px;
 }
-
 .title-bottom {
-    background-color: var(--main-bg-color);
-    height: 5px;
-    width: 200px;
-    margin: auto;
-    margin-bottom: 30px;
+  background-color: var(--main-bg-color);
+  height: 5px;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 30px;
 }
-
 .my-card {
-    max-width: 80%;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid yellow;
+}
+.card-body {
+  text-align: center;
+  color: var(--main-bg-color);
+}
+.btntext {
+  color: var(--secondary-color);
+}
+.card-img-top {
+  border-bottom: 5px solid var(--main-bg-color);
+}
+.btn {
+  background-color: var(--main-bg-color);
+}
+.card-body a.btn:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid;
+  border-color: var(--main-bg-color);
+}
+.card-body a.btn:hover .btntext {
+  color: var(--main-bg-color);
+}
+#experience {
+  background-color: var(--main-bg-color);
+  text-align: center;
+  color: var(--secondary-color);
+  margin-top: -10px;
+}
+.work-exp-title {
+  color: var(--secondary-color);
+}
+.work-exp-title-bottom {
+  background-color: var(--secondary-color);
+}
+.work-tab {
+  border: 5px solid;
+  border-color: var(--secondary-color);
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: var(--secondary-color);
+  color: var(--main-bg-color);
+  font-weight: bold;
+  border-radius: 20px;
+}
+.resp-list {
+  text-align: left;
+}
+#contact-me {
+  height: 30vh;
+  color: var(--main-bg-color);
+  text-align: center;
+  font-weight: bold;
+}
+.contact {
+  text-align: center;
+  font-weight: bold;
+}
+.contact-details h5 {
+  color: inherit;
+  text-decoration: none;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--main-bg-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50%;
+}
+#myBtn:active {
+  background-color: var(--secondary-color);
+  color: var(--main-bg-color);
+  border: 1px solid;
+  border-color: var(--main-bg-color);
+}
+@media screen and (max-width: 767px) {
+  .my-card {
+    max-width: 60%;
     margin: auto;
     margin-bottom: 30px;
+  }
 }
-
-.card-body {
-    text-align: center;
-    color: var(--main-bg-color);
-}
-
-.btntext {
-    color: var(--secondary-color);
-}
-
-.card-img-top {
-    border-bottom: 5px solid var(--main-bg-color);
-}
-
-.btn {
-    background-color: var(--main-bg-color);
-}
-
-.card-body a.btn:hover {
-    background-color: var(--secondary-color);
-    border: 1px solid;
-    border-color: var(--main-bg-color);
-}
-
-.card-body a.btn:hover .btntext {
-    color: var(--main-bg-color);
-}
-
-#experience {
-    background-color: var(--main-bg-color);
-    text-align: center;
-    color: var(--secondary-color);
-    margin-top: -10px;
-}
-
-#my-projects,
-#experience {
-    scroll-margin-top: 70px;
-}
-
-.work-exp-title {
-    color: var(--secondary-color);
-}
-
-.work-exp-title-bottom {
-    background-color: var(--secondary-color);
-}
-
-.work-tab {
-    border: 5px solid;
-    border-color: var(--secondary-color);
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-    background-color: var(--secondary-color);
-    color: var(--main-bg-color);
-    font-weight: bold;
-    border-radius: 20px;
-}
-
-.resp-list {
-    text-align: left;
-}
-
-#contact-me {
-    height: 30vh;
-    color: var(--main-bg-color);
-    text-align: center;
-    font-weight: bold;
-}
-
-.contact {
-    text-align: center;
-    font-weight: bold;
-}
-
-.contact-details h5 {
-    color: inherit;
-    text-decoration: none;
-}
-
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    z-index: 99999;
-    font-size: 20px;
-    border: none;
-    outline: none;
-    background-color: var(--main-bg-color);
-    color: var(--secondary-color);
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 50%;
-}
-
-#myBtn:active {
-    background-color: var(--secondary-color);
-    color: var(--main-bg-color);
-    border: 1px solid;
-    border-color: var(--main-bg-color);
-}
-
-@media screen and (max-width: 767px) {
-    .my-card {
-        max-width: 60%;
-        margin: auto;
-        margin-bottom: 30px;
-    }
-}
-
 @media screen and (max-width: 700px) {
-    .profile p {
-        font-size: 1.5rem;
-    }
+  .profile p {
+    font-size: 1.5rem;
+  }
 }
-
 @media screen and (max-width: 650px) {
-    .nav {
-        text-align: center;
-    }
-    .links {
-        width: 100%;
-    }
+  .nav {
+    text-align: center;
+  }
+  .links {
+      width:100%;
+  }
 }
-
-@media screen and (max-width: 683px) {
-    #my-projects,
-    #experience {
-        scroll-margin-top: 95px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .profile {
-        padding-top: 20vh;
-    }
-}
-
 @media screen and (max-width: 500px) {
-    .nav {
-        padding-bottom: 0px;
-    }
-    .links {
-        display: none;
-    }
-    .nav h3 {
-        text-align: left;
-        margin-left: 5vw;
-    }
-    .hamburger {
-        display: block;
-        outline: none;
-    }
-    .my-links {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .ul-list {
-        list-style-type: none;
-    }
-    .ul-list li a {
-        text-decoration: none;
-        outline: none;
-    }
-    .ul-list li {
-        margin-bottom: 5px;
-        margin-left: 0px;
-    }
-    #my-projects,
-    #experience {
-        scroll-margin-top: 55px;
-    }
-    .profile {
-        padding-top: 15vh;
-    }
+  .nav {
+    padding-bottom: 0px;
+  }
+  .links {
+    display: none;
+  }
+  .nav h3 {
+    text-align: left;
+    margin-left: 5vw;
+  }
+  .hamburger {
+    display: block;
+    outline: none;
+  }
+  .my-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .ul-list {
+    list-style-type: none;
+  }
+  .ul-list li a {
+    text-decoration: none;
+    outline: none;
+  }
+  .ul-list li {
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
 }
+
