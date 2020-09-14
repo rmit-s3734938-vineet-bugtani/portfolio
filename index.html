@@ -235,11 +235,23 @@
 
         //Get the button
         var mybutton = document.getElementById("myBtn");
+        var profile = document.getElementById("profile");
+        var nav = document.getElementById("nav");
 
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {
             scrollFunction();
         };
+
+        window.onload = function() {
+            adjustProfileDiv();
+        }
+
+        $(window).resize($.debounce(250, adjustProfileDiv));
+
+        // window.onresize = function() {
+        //     adjustProfileDiv();
+        // }
 
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -247,6 +259,11 @@
             } else {
                 mybutton.style.display = "none";
             }
+        }
+
+        function adjustProfileDiv() {
+            console.log("called");
+            $("#profile").css("padding-top", $('#nav').outerHeight(true) + 50);
         }
 
         // When the user clicks on the button, scroll to the top of the document

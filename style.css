@@ -260,12 +260,6 @@
     }
 }
 
-@media screen and (max-width: 850px) {
-    .profile {
-        padding-top: 20vh;
-    }
-}
-
 @media screen and (max-width: 500px) {
     .nav {
         padding-bottom: 0px;
@@ -300,8 +294,5 @@
     #my-projects,
     #experience {
         scroll-margin-top: 55px;
-    }
-    .profile {
-        padding-top: 15vh;
     }
 }
