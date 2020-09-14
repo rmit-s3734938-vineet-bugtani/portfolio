@@ -39,7 +39,7 @@
                 <h3>Vineet Bugtani</h3>
                 <div class="links">
                     <a href="#profile">Profile</a>
-                    <a href="#my-projects">Projects</a>
+                    <a href="#my-projects" onclick="adjustMarginTop()">Projects</a>
                     <a href="#experience">Work Experience</a>
                     <a href="#contact-me">Contact Me</a>
                 </div>
@@ -51,7 +51,7 @@
                 <div class="my-links" id="my-links">
                     <ul class="ul-list">
                         <li><a href="#profile" onclick="displayHamburgerMenu()">Profile</a></li>
-                        <li><a href="#my-projects" onclick="displayHamburgerMenu()">Projects</a></li>
+                        <li><a href="#my-projects" onclick="displayHamburgerMenu();adjustMarginTop();">Projects</a></li>
                         <li><a href="#experience" onclick="displayHamburgerMenu()">Work Experience</a></li>
                         <li><a href="#contact-me" onclick="displayHamburgerMenu()">Contact Me</a></li>
                     </ul>
@@ -238,9 +238,17 @@
         var profile = document.getElementById("profile");
         var nav = document.getElementById("nav");
 
+
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {
             scrollFunction();
+
+            var currentScrollPos = window.pageYOffset;
+            if (currentScrollPos < 150) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-100px";
+            }
         };
 
         window.onload = function() {
@@ -248,10 +256,7 @@
         }
 
         $(window).resize($.debounce(250, adjustProfileDiv));
-
-        // window.onresize = function() {
-        //     adjustProfileDiv();
-        // }
+        $(window).scroll($.debounce(250, adjustMarginTop));
 
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -262,8 +267,15 @@
         }
 
         function adjustProfileDiv() {
-            console.log("called");
             $("#profile").css("padding-top", $('#nav').outerHeight(true) + 50);
+        }
+
+        function adjustMarginTop() {
+            if (parseInt($("#my-projects").css("margin-top").replace('px', '')) === 0) {
+                $("#my-projects").css("margin-top", $('#nav').outerHeight(true) + 5);
+            } else {
+                $("#my-projects").css("margin-top", 0);
+            }
         }
 
         // When the user clicks on the button, scroll to the top of the document

@@ -24,6 +24,7 @@
     clear: both;
     width: 100%;
     background-color: var(--main-bg-color);
+    transition: background 0.4s ease-in-out;
 }
 
 .nav h3 {
