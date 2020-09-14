@@ -8,22 +8,11 @@
     color: var(--secondary-color);
 }
 
-.nav-wrapper {
-    height: 100%;
-}
-
 .nav {
     align-items: center;
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    clear: both;
-    width: 100%;
-    background-color: var(--main-bg-color);
 }
 
 .nav h3 {
@@ -63,7 +52,6 @@
     color: var(--secondary-color);
     display: none;
     outline: none;
-    margin-top: -10px;
 }
 
 .hamburger:hover {
@@ -87,9 +75,8 @@
 .profile {
     align-items: center;
     display: flex;
-    padding-top: 10vw;
-    padding-bottom: 5vw;
-    margin-top: 0px;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
 }
 
 .profile p {
@@ -122,6 +109,7 @@
     max-width: 80%;
     margin: auto;
     margin-bottom: 30px;
+    border: 1px solid yellow;
 }
 
 .card-body {
@@ -156,11 +144,6 @@
     text-align: center;
     color: var(--secondary-color);
     margin-top: -10px;
-}
-
-#my-projects,
-#experience {
-    scroll-margin-top: 70px;
 }
 
 .work-exp-title {
@@ -209,7 +192,7 @@
     position: fixed;
     bottom: 20px;
     right: 0px;
-    z-index: 99999;
+    z-index: 99;
     font-size: 20px;
     border: none;
     outline: none;
@@ -250,13 +233,6 @@
     }
     .links {
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 683px) {
-    #my-projects,
-    #experience {
-        scroll-margin-top: 95px;
     }
 }
 
