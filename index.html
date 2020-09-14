@@ -34,26 +34,28 @@
 
 <body>
     <div class="navandprofile">
-        <div class="nav">
-            <h3>Vineet Bugtani</h3>
-            <div class="links">
-                <a href="#profile">Profile</a>
-                <a href="#my-projects">Projects</a>
-                <a href="#experience">Work Experience</a>
-                <a href="#contact-me">Contact Me</a>
-            </div>
-            <div>
-                <button type="button" onclick="displayHamburgerMenu()" class="hamburger">
+        <div class="nav-wrapper">
+            <div class="nav" id="nav">
+                <h3>Vineet Bugtani</h3>
+                <div class="links">
+                    <a href="#profile">Profile</a>
+                    <a href="#my-projects">Projects</a>
+                    <a href="#experience">Work Experience</a>
+                    <a href="#contact-me">Contact Me</a>
+                </div>
+                <div>
+                    <button onclick="displayHamburgerMenu()" type="button" class="hamburger" id="hamburger">
           <i class="fa fa-bars"> </i>
         </button>
-            </div>
-            <div class="my-links">
-                <ul class="ul-list">
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#my-projects">Projects</a></li>
-                    <li><a href="#experience">Work Experience</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
-                </ul>
+                </div>
+                <div class="my-links" id="my-links">
+                    <ul class="ul-list">
+                        <li><a href="#profile" onclick="displayHamburgerMenu()">Profile</a></li>
+                        <li><a href="#my-projects" onclick="displayHamburgerMenu()">Projects</a></li>
+                        <li><a href="#experience" onclick="displayHamburgerMenu()">Work Experience</a></li>
+                        <li><a href="#contact-me" onclick="displayHamburgerMenu()">Contact Me</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="profile" id="profile">
@@ -238,7 +240,7 @@
 
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {
-            scrollFunction()
+            scrollFunction();
         };
 
         window.onload = function() {
