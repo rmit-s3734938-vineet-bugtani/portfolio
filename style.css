@@ -188,10 +188,13 @@
 }
 
 #contact-me {
-    height: 30vh;
     color: var(--main-bg-color);
     text-align: center;
     font-weight: bold;
+}
+
+.contact-details {
+    padding-bottom: 50px;
 }
 
 .contact {
