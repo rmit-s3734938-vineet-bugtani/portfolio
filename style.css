@@ -298,4 +298,10 @@
     #experience {
         scroll-margin-top: 55px;
     }
+    .work-tab h4 {
+        font-size: 1.3rem;
+    }
+    .work-tab h5 {
+        font-size: 1.1rem;
+    }
 }
