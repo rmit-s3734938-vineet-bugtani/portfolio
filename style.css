@@ -87,7 +87,6 @@
 
 .profile {
     align-items: center;
-    display: flex;
     padding-top: 10vw;
     padding-bottom: 5vw;
     margin-top: 0px;
@@ -95,11 +94,35 @@
 
 .profile p {
     color: var(--secondary-color);
-    font-weight: bold;
-    width: 80vw;
+    width: 60%;
     margin: auto;
     text-align: center;
-    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    font-weight: 700;
+}
+
+.profile h3 {
+    font-weight: lighter;
+}
+
+.profile-btntext {
+    color: var(--main-bg-color);
+}
+
+.profile-btn {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    display: block;
+    margin: auto;
+    width: 200px;
+    margin-top: 30px;
+}
+
+.profile a.profile-btn:hover {
+    text-decoration: none;
 }
 
 .title {
@@ -248,7 +271,7 @@
 
 @media screen and (max-width: 700px) {
     .profile p {
-        font-size: 1.5rem;
+        width: 80%;
     }
 }
 
