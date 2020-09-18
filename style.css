@@ -179,11 +179,16 @@
     text-align: center;
     color: var(--secondary-color);
     margin-top: -10px;
+    padding-bottom: 80px;
 }
 
 #my-projects,
 #experience {
     scroll-margin-top: 70px;
+}
+
+#experience .work-row {
+    display: none;
 }
 
 .work-exp-title {
@@ -197,13 +202,15 @@
 .work-tab {
     border: 5px solid;
     border-color: var(--secondary-color);
-    width: 80%;
+    width: 60%;
     margin: auto;
     margin-bottom: 20px;
     background-color: var(--secondary-color);
     color: var(--main-bg-color);
     font-weight: bold;
     border-radius: 20px;
+    text-align: center;
+    min-height: 350px;
 }
 
 .resp-list {
@@ -295,6 +302,16 @@
     .contact-details p {
         padding-bottom: 30px;
     }
+    #experience .work-row {
+        display: block;
+    }
+    #carouselExampleIndicators {
+        display: none;
+    }
+    .work-tab {
+        width: 80%;
+        min-height: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -337,5 +354,20 @@
     }
     .work-tab h5 {
         font-size: 1.1rem;
+    }
+    .profile h2 {
+        font-size: 1.5rem;
+    }
+    .profile h3 {
+        font-size: 1.4rem;
+    }
+    .work-tab {
+        width: 90%;
+        min-height: 0;
+    }
+    .my-projects h2,
+    #experience h2,
+    #contact-me h2 {
+        font-size: 1.6rem;
     }
 }
