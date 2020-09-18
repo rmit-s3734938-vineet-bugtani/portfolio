@@ -197,14 +197,19 @@
     padding-bottom: 50px;
 }
 
+.contact-details i {
+    font-size: 40px;
+}
+
 .contact {
     text-align: center;
     font-weight: bold;
 }
 
-.contact-details h5 {
+.contact-details p {
+    font-size: 20px;
+    margin-top: 20px;
     text-decoration: none !important;
-    color: var(--main-bg-color);
 }
 
 #myBtn {
@@ -260,6 +265,12 @@
     #my-projects,
     #experience {
         scroll-margin-top: 95px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contact-details p {
+        padding-bottom: 30px;
     }
 }
 
